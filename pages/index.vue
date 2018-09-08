@@ -4,6 +4,10 @@
       <div class="video">
         <iframe src="https://www.youtube.com/embed/nQHQWuCxXCg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
+      <i class="el-icon-edit"></i>
+      <i class="el-icon-share"></i>
+      <i class="el-icon-delete"></i>
+      <el-button type="primary" icon="el-icon-search">Search</el-button>
       <el-table
         :data="tableData"
         style="width: 100%"
