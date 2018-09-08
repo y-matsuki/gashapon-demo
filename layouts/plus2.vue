@@ -8,10 +8,10 @@
     <el-main><nuxt/></el-main> 
     <el-footer>
       <ul type="disc">
-      <li>ELLEGARDEN THE BOYS ARE BACK IN TOWN TOUR 2018</li>
-      <li>[出演] ELLEGARDEN, ONE OK ROCK</li>
-      <li>[場所] 新木場STUDIO COAST</li>
-      <li>[日付] 2018.8.8</li>
+      <li>BLUE ENCOUNT LIVE (LIVER'S 武道館)</li>
+      <li>[出演] BLUE ENCOUNT</li>
+      <li>[場所] 日本武道館</li>
+      <li>[日付] 2016.10.9</li>
       </ul>
     </el-footer>
   </el-container> 
@@ -20,17 +20,17 @@
 <style> 
 
 .el-header { 
-  background-color: #b3ddff; 
+  background-color: #ffccce; 
   font-weight: 900; 
-  color: #4682b4; 
+  color: #ff8084; 
   text-align: center; 
   line-height: 60px; 
 } 
 
 .el-footer { 
-  background-color: #b3ddff; 
+  background-color: #ffccce; 
   font-weight: 900; 
-  color: #4682b4; 
+  color: #ff8084; 
   text-align: left; 
   line-height: 60px; 
 } 

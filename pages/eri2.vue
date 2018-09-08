@@ -2,7 +2,7 @@
   <div>
     <div class="block">
       <div class="video">
-        <iframe src="https://www.youtube.com/embed/lfdvtBgX81U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/SpLYMzuXWKo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <i class="el-icon-service"></i>
       <el-table
@@ -15,7 +15,7 @@
         </el-table-column>
         <el-table-column
           prop="play"
-          label="再生"
+          label="特別音源"
           width="180">
         </el-table-column>
         <el-table-column
@@ -34,38 +34,38 @@
 
 <script>
 export default {
-  layout: "plus",
+  layout: "plus2",
   data() {
     return {
       tableData: [{
         //play: <audio src="sample/sample.ogg" controls></audio>,
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ONE OK ROCK',
-        name: 'I was King',
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'Survivor',
+      }, {
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'DAY×DAY',
+      }, {
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'YOU',
+      }, {
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'LIVER',
+      }, {
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'ONE',
       }, {
         play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ELLEGARDEN',
-        name: 'Fire Cracker',
+        artist: 'BLUE ENCOUNT',
+        name: 'もっと光を',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ELLEGARDEN',
-        name: 'Missing',
-      }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ONE OK ROCK',
-        name: 'Take what you want',
-      }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ELLEGARDEN',
-        name: 'Supernova',
-      }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ONE OK ROCK',
-        name: 'Mighty Long Fall',
-      }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
-        artist: 'ELLEGARDEN',
-        name: 'ジターバグ',
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        artist: 'BLUE ENCOUNT',
+        name: 'LAST HERO',
       }]
     }
   }
