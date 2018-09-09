@@ -16,6 +16,11 @@
         <el-table-column
           prop="play"
           label="再生">
+          <template slot-scope="scope">
+            <el-button type="primary" @click="open(scope.row.play)" circle>
+              <i class="el-icon-caret-right"></i>
+            </el-button>
+          </template>
         </el-table-column>
         <el-table-column
           prop="artist"
@@ -38,37 +43,45 @@ export default {
     return {
       tableData: [{
         //play: <audio src="sample/sample.ogg" controls></audio>,
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ONE OK ROCK',
         name: 'I was King',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ELLEGARDEN',
         name: 'Fire Cracker',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ELLEGARDEN',
         name: 'Missing',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ONE OK ROCK',
         name: 'Take what you want',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ELLEGARDEN',
         name: 'Supernova',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ONE OK ROCK',
         name: 'Mighty Long Fall',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/121184394.m4a',
         artist: 'ELLEGARDEN',
         name: 'ジターバグ',
       }],
       style: {
         '--background-color': '#ffffff'
       }
+    }
+  },
+  methods: {
+    open (name) {
+      console.log(name)
+      const audioElem = new Audio()
+      audioElem.src = name
+      audioElem.play()
     }
   }
 }

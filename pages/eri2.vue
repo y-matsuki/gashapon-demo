@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app" style="style">
     <div class="block">
       <div class="video">
         <iframe src="https://www.youtube.com/embed/SpLYMzuXWKo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -7,16 +7,21 @@
       <i class="el-icon-service"></i>
       <el-table
         :data="tableData"
-        style="width: 100%"
-        :row-class-name="tableRowClassName">
+        style="width: 100%">
         <el-table-column
           type="index"
-          :index="indexMethod">
+          >
         </el-table-column>
         <el-table-column
-          prop="play"
           label="特別音源"
-          width="180">
+          width="180"
+          prop="play">
+          <template slot-scope="scope">
+            <el-button type="danger" @click="open(scope.row.play)" v-if="scope.row.play" circle>
+              <i class="el-icon-caret-right"></i>
+            </el-button>
+            <p v-else>---</p>
+          </template>
         </el-table-column>
         <el-table-column
           prop="artist"
@@ -43,36 +48,48 @@ export default {
         artist: 'BLUE ENCOUNT',
         name: 'Survivor',
       }, {
-        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'BLUE ENCOUNT',
         name: 'DAY×DAY',
       }, {
-        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'BLUE ENCOUNT',
         name: 'YOU',
       }, {
-        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'BLUE ENCOUNT',
         name: 'LIVER',
       }, {
-        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'BLUE ENCOUNT',
         name: 'ONE',
       }, {
-        play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'BLUE ENCOUNT',
         name: 'もっと光を',
       }, {
-        //play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/96007920.m4a',
         artist: 'BLUE ENCOUNT',
         name: 'LAST HERO',
-      }]
+      }],
+      style: {
+        '--background-color': '#ffffff'
+      }
+    }
+  },
+  methods: {
+    open (name) {
+      console.log(name)
+      const audioElem = new Audio()
+      audioElem.src = name
+      audioElem.play()
     }
   }
 }
 </script>
 
 <style scoped>
+#app {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .video {
   position: relative;
   width: 100%;
