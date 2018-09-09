@@ -113,42 +113,42 @@
   title: 'みらくるが止まンないっ!',
   artist: 'SUPER☆GiRLS',
   time: '04:13',
-  address: 'No. 01, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'がんばって 青春',
   artist: 'SUPER☆GiRLS',
   time: '04:36',
-  address: 'No. 02, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'MAX! 乙女心',
   artist: 'SUPER☆GiRLS',
   time: '04:35',
-  address: 'No. 03, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: '女子力←パラダイス',
   artist: 'SUPER☆GiRLS',
   time: '04:33',
-  address: 'No. 04, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'EveryBody JUMP!!',
   artist: 'SUPER☆GiRLS',
   time: '04:08',
-  address: 'No. 05, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: '1,000,000☆スマイル',
   artist: 'SUPER☆GiRLS',
   time: '04:26',
-  address: 'No. 06, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'プリプリSUMMERキッス',
   artist: 'SUPER☆GiRLS',
   time: '04:51',
-  address: 'No. 07, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: '赤い情熱',
   artist: 'SUPER☆GiRLS',
   time: '04:38',
-  address: 'No. 08, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'Celebration',
   artist: 'iDOL Street All Members',
@@ -158,42 +158,42 @@
   title: '常夏ハイタッチ',
   artist: 'SUPER☆GiRLS',
   time: '04:39',
-  address: 'No. 10, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'PAN-PAKA-PAN!',
   artist: 'iDOL Street All Members',
   time: '03:52',
-  address: 'No. 11, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: '年下の男の子',
   artist: 'キャンディーマキアート',
   time: '03:31',
-  address: 'No. 12, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'センチメンタル・ジャーニー',
   artist: '前島亜美',
   time: '03:08',
-  address: 'No. 13, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'ジン ジン ジンジングル',
   artist: 'トゥインクルヴェール',
   time: '03:37',
-  address: 'No. 14, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: '空色のキセキ',
   artist: 'SUPER☆GiRLS',
   time: '05:07',
-  address: 'No. 15, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'BELIEVE IN LOVE',
   artist: 'SUPER☆GiRLS',
   time: '03:57',
-  address: 'No. 16, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }, {
   title: 'アジアの純真',
   artist: 'SUPER☆GiRLS',
   time: '03:59',
-  address: 'No. 17, Japan, Tokyo'
+  address: 'You Can Not Play.'
   }]
   }
   }
