@@ -1,9 +1,7 @@
 <template> 
   <el-container> 
     <el-header>
-      <font face="cursive">
-        ライブ会場特典! ~セトリでShuffle Music~
-      </font>
+      ライブ会場特典! ~セトリでShuffle Music~
     </el-header> 
     <el-main><nuxt/></el-main> 
     <el-footer>
@@ -25,6 +23,7 @@
   color: #ff8084; 
   text-align: center; 
   line-height: 60px; 
+  font-family: 'Yu Gothic', cursive;
 } 
 
 .el-footer { 
@@ -33,5 +32,6 @@
   color: #ff8084; 
   text-align: left; 
   line-height: 60px; 
+  font-family: 'Yu Gothic', cursive;
 } 
 </style>

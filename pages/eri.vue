@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app" style="style">
     <div class="block">
       <div class="video">
         <iframe src="https://www.youtube.com/embed/lfdvtBgX81U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -15,8 +15,7 @@
         </el-table-column>
         <el-table-column
           prop="play"
-          label="再生"
-          width="180">
+          label="再生">
         </el-table-column>
         <el-table-column
           prop="artist"
@@ -66,13 +65,22 @@ export default {
         play: <audio controls=""><source src="city.mp3" type="audio/mpeg"/></audio>,
         artist: 'ELLEGARDEN',
         name: 'ジターバグ',
-      }]
+      }],
+      style: {
+        '--background-color': '#ffffff'
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+#app {
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .video {
   position: relative;
   width: 100%;
