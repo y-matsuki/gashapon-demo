@@ -21,3 +21,8 @@ git push origin master
 ## 参考
 - https://ja.nuxtjs.org/
 - https://element.eleme.io/
+
+```
+npm run generate
+aws s3 cp --profile mag-dev --recursive ./docs s3://gashapon-demo/
+```
