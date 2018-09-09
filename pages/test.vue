@@ -14,8 +14,7 @@
 </div>
 <el-table
     　　:data="tableData"
-        style="width: 100%"
-        :row-class-name="tableRowClassName">
+        style="width: 100%">
         <el-table-column
           prop="date"
           label="Number"
@@ -32,12 +31,12 @@
           width="300">
         </el-table-column>
         <el-table-column
- prop="address"
- label="Play">
+          prop="play"
+          label="Play">
  <template slot-scope="scope">
-   <el-tag type="primary" disable-transitions>
+   <el-button type="primary" @click="open(scope.row.play)">
      <i class="el-icon-service"></i>
-   </el-tag>
+   </el-button>
  </template>
 </el-table-column>
 </el-table>
@@ -53,28 +52,37 @@ export default {
         date: '1',
         name: '君へ',
         time: '5:01',
-        play: '5:01'
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/142139386.m4a'
 
       }, {
         date: '2',
         name: 'こんにちは',
         time: '3:09',
-        play: '5:01'
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/142139386.m4a'
 
       }, {
         date: '3',
         name: 'こんばんは',
         time: '4:22',
-        play: '5:01'
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/142139386.m4a'
 
       }, {
         date: '4',
         name: 'なぜ？',
         time: '3:34',
-        play: '5:01'
+        play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/142139386.m4a'
       }]
     }
-  }
+},
+
+methods: {
+  open(name){
+console.log(name)
+const audioElem=new Audio()
+audioElem.src=name
+audioElem.play()
+}
+}
 }
 </script>
 
