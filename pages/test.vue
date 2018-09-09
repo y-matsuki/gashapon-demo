@@ -17,18 +17,19 @@
         style="width: 100%">
         <el-table-column
           prop="date"
-          label="Number"
-          width="500">
+          label=""
+          width="30"
+        >
         </el-table-column>
         <el-table-column
           prop="name"
           label="Song"
-          width="400">
+          >
         </el-table-column>
         <el-table-column
           prop="time"
           label="Time"
-          width="300">
+          >
         </el-table-column>
         <el-table-column
           prop="play"
