@@ -2,10 +2,10 @@
   <div>
     <div class="block">
       <h1>
-        <font size="7" color="#ff0000">SUPER☆GiRLS</font>
+        <font size="7" color="#ff0000">TOWER RECORDS渋谷店</font>
       </h1>
       <h2>
-        <font size="4" color="#ff0000" background-color="#ffd700">TOWER RECORDS渋谷店</font>
+        <font size="4" color="#ff0000" background-color="#ffd700">SUPER☆GiRLS</font>
       </h2>
 
       <h3>「超絶少女☆BEST 2010～2014」</h3>
@@ -68,10 +68,7 @@
       <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RIOZ0iQYfDs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
       </div>
-      <i class="el-icon-edit"></i>
-      <i class="el-icon-share"></i>
-      <i class="el-icon-delete"></i>
-      <el-button type="primary" icon="el-icon-search">Search</el-button>
+     
       <el-table
         :data="tableData"
         style="width: 100%"
