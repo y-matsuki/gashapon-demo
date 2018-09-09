@@ -4,8 +4,7 @@ module.exports = {
     dir: 'docs'
   },
   build: {
-    vendor: ['element-ui'],
-    publicPath: 'https://yuto-matsuki-recochoku.github.io/gashapon-demo/'
+    vendor: ['element-ui']
   },
   plugins: [
     '~plugins/element-ui'

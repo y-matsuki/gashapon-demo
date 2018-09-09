@@ -1,5 +1,7 @@
 # gashapon-demo
 
+- http://gashapon-demo.s3-website-ap-northeast-1.amazonaws.com/
+
 ```
 # ローカルで確認
 npm run dev
@@ -21,3 +23,8 @@ git push origin master
 ## 参考
 - https://ja.nuxtjs.org/
 - https://element.eleme.io/
+
+```
+npm run generate
+aws s3 cp --profile mag-dev --recursive ./docs s3://gashapon-demo/
+```
