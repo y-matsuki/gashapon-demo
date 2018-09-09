@@ -5,23 +5,43 @@
       <br>
     <p>湘南限定プレミアムアルバムを聞いて見よう!</p>
     <br>
-    <div class="block">
-      <p>アルバムタイトル</p>
-      <br>
-  <ul>
-        <li>君へ<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-        <li>こんにちは<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-        <li>こんばんは<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-        <li>愛してる<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-        <li>明日へ<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-        <li>この思い<i class="el-icon-caret-right" type="button" onclick='alert("hogehoge")'></i></li>
-  </ul>
-</div>
-</div>
-      <div class="video">
+    <div class="video">
 <iframe　src="https://www.youtube.com/embed/rmOPfwdJjZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-  </div>
+<div class="syonan">
+      <p>湘南</p>
+    </div>
+</div>
+<el-table
+    　　:data="tableData"
+        style="width: 100%"
+        :row-class-name="tableRowClassName">
+        <el-table-column
+          prop="date"
+          label="Number"
+          width="500">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="Song"
+          width="400">
+        </el-table-column>
+        <el-table-column
+          prop="time"
+          label="Time"
+          width="300">
+        </el-table-column>
+        <el-table-column
+ prop="address"
+ label="Play">
+ <template slot-scope="scope">
+   <el-tag type="primary" disable-transitions>
+     <i class="el-icon-service"></i>
+   </el-tag>
+ </template>
+</el-table-column>
+</el-table>
+</div>
 </template>
 
 <script>
@@ -30,21 +50,28 @@ export default {
   data() {
     return {
       tableData: [{
-        date: '2016-05-03',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        date: '1',
+        name: '君へ',
+        time: '5:01',
+        play: '5:01'
+
       }, {
-        date: '2016-05-02',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        date: '2',
+        name: 'こんにちは',
+        time: '3:09',
+        play: '5:01'
+
       }, {
-        date: '2016-05-04',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        date: '3',
+        name: 'こんばんは',
+        time: '4:22',
+        play: '5:01'
+
       }, {
-        date: '2016-05-01',
-        name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles'
+        date: '4',
+        name: 'なぜ？',
+        time: '3:34',
+        play: '5:01'
       }]
     }
   }
@@ -54,12 +81,17 @@ export default {
 <style scoped>
 .play{
   font-size: x-large;
-
+  color: yellow;
 }
 .video {
   position: relative;
   width: 100%;
   padding-top: 56.25%;
+}
+.syonan{
+  color: yellow;
+  font-size: x-large;
+
 }
 .video iframe {
   position: absolute;
@@ -67,5 +99,10 @@ export default {
   right: 0;
   width: 100%;
   height: 100%;
+}
+.el-table {
+  width:700px;
+margin-right: auto;
+margin-left : auto;
 }
 </style>
