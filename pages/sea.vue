@@ -10,7 +10,7 @@
          <iframe width="560" height="315" src="https://www.youtube.com/embed/-wvWBkidVqI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <i class="el-icon-share" onclick='alert("共有できたら良いなあ")'></i>
-        <el-button type="primary" icon="el-icon-search" onclick='alert("Split end/ロストシー: 以下紹介文")'>この曲は？</el-button>
+        <el-button type="primary" icon="el-icon-search" onclick="window.open('http://www.splitendofficial.com/')">公式サイトへ</el-button>
         <el-table
           :data="tableData"
           style="width: 100%"
@@ -40,7 +40,7 @@
     data() {
       return {
         tableData: [{
-          sample: <audio src="sample/sample.ogg" controls></audio>,
+          sample: <audio src="https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/HOTLIMIT.m4a" controls></audio>,
           music: 'HOT LIMIT',
           name: 'T.M.Revolution'
           
@@ -77,7 +77,7 @@
 
   <style scoped>
   .block {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 600;
   }
   .block2 {
