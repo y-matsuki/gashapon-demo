@@ -2,7 +2,7 @@
     <div>
       <div class="block">
         <h1>今回のイチオシ曲</h1><br>
-      </div>
+        </div>
         <div class="block2">
           <h2>ロストシー/Split end</h2>
         </div>
@@ -45,27 +45,27 @@
           name: 'T.M.Revolution'
           
         }, {
-          sample: <audio src="https://www.youtube.com/embed/-wvWBkidVqI" controls></audio>,
+          sample: <audio controls></audio>,
           music: 'TSUNAMI',
           name: 'サザンオールスターズ'
           
         }, {
-          sample: <audio src="https://youtu.be/SBjQ9tuuTJQ" controls></audio>,
+          sample: <audio controls></audio>,
           music: '睡蓮花',
           name: '湘南乃風'
           
         }, {
-          sample: <audio src="https://youtu.be/SBjQ9tuuTJQ" controls></audio>,
+          sample: <audio controls></audio>,
           music: 'パレオはエメラルド',
           name: 'SKE48'
           
         },{
-          sample: <audio src="https://youtu.be/SBjQ9tuuTJQ" controls></audio>,
+          sample: <audio controls></audio>,
           music: '海の声',
           name: '桐谷健太'
           
         },{
-            sample: <audio src="https://youtu.be/SBjQ9tuuTJQ" controls></audio>,
+            sample: <audio controls></audio>,
           music: 'シ－ズン・イン・ザ・サン',
           name: 'TUBE'
         
@@ -77,8 +77,8 @@
 
   <style scoped>
   .block {
-    font-size: x-large;
-    font-weight: 600;
+    font-size: xx-large;
+    text-align: center;
   }
   .block2 {
     font-size: large;
