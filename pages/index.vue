@@ -2,17 +2,22 @@
   <div>
     <div class="block">
       <el-row>
-        <el-button :plain="true" type="primary" @click="open('eri')">eri</el-button>
-        <el-button :plain="true" type="primary" @click="open('eri2')">eri2</el-button>
-        <el-button :plain="true" type="primary" @click="open('index.mikan')">index.mikan</el-button>
-        <el-button :plain="true" type="primary" @click="open('plus')">plus</el-button>
-        <el-button :plain="true" type="primary" @click="open('sea')">sea</el-button>
-        <el-button :plain="true" type="primary" @click="open('test')">test</el-button>
+        <el-button :plain="true" @click="open('eri')">
+          <img src="~/static/img/eri.jpg">
+          <p>eri</p>
+        </el-button>
+        <el-button :plain="true" @click="open('eri2')">
+          <img src="~/static/img/eri2.jpg">
+          <p>eri2</p>
+        </el-button>
+        <el-button :plain="true" @click="open('index.mikan')">index.mikan</el-button>
+        <el-button :plain="true" @click="open('plus')">plus</el-button>
+        <el-button :plain="true" @click="open('sea')">sea</el-button>
+        <el-button :plain="true" @click="open('test')">
+          <img src="~/static/img/test.png">
+          <p>test</p>
+        </el-button>
       </el-row>
-      <i class="el-icon-edit"></i>
-      <i class="el-icon-share"></i>
-      <i class="el-icon-delete"></i>
-      <el-button type="primary" icon="el-icon-search">Search</el-button>
       <el-table
         :data="tableData"
         style="width: 100%">
@@ -68,8 +73,7 @@ export default {
   },
   methods: {
     open(name) {
-      console.log(name)
-      // this.$router.push(name)
+      this.$router.push(name)
     },
     play(url) {
       console.log(url)
