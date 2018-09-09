@@ -1,13 +1,6 @@
 <template>
   <div>
     <div class="block">
-      <!-- <div class="video">
-        <iframe src="https://www.youtube.com/embed/nQHQWuCxXCg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-      </div> -->
-      <audio id="audio" controls v-if="source_url">
-        <source :src="source_url" type="audio/mp4">
-        Your browser does not support the audio tag.
-      </audio>
       <el-row>
         <el-button :plain="true" type="primary" @click="open('eri')">eri</el-button>
         <el-button :plain="true" type="primary" @click="open('eri2')">eri2</el-button>
@@ -16,7 +9,6 @@
         <el-button :plain="true" type="primary" @click="open('sea')">sea</el-button>
         <el-button :plain="true" type="primary" @click="open('test')">test</el-button>
       </el-row>
-      </div>
       <i class="el-icon-edit"></i>
       <i class="el-icon-share"></i>
       <i class="el-icon-delete"></i>
@@ -38,9 +30,10 @@
           prop="address"
           label="Address">
           <template slot-scope="scope">
-            <el-button type="primary" @click="play(scope.row.url)">
-              <i class="el-icon-delete"></i>
+            <el-button type="primary" @click="play(scope.row.url)" v-if="scope.row.url">
+              <i class="el-icon-caret-right"></i>
             </el-button>
+            <el-button disabled v-else><i class="el-icon-close"></i></el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -53,7 +46,6 @@ import Vue from 'vue'
 export default {
   data() {
     return {
-      source_url: null,
       tableData: [{
         date: '2016-05-03',
         name: 'Tom',
@@ -70,8 +62,7 @@ export default {
       }, {
         date: '2016-05-01',
         name: 'Tom',
-        address: 'No. 189, Grove St, Los Angeles',
-        url: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/96007920.m4a'
+        address: 'No. 189, Grove St, Los Angeles'
       }]
     }
   },
@@ -82,10 +73,9 @@ export default {
     },
     play(url) {
       console.log(url)
-      this.source_url = url
-      Vue.nextTick(function () {
-        document.getElementById('audio').play()
-      })
+      const audioElem = new Audio()
+      audioElem.src = url
+      audioElem.play()
     }
   }
 }
