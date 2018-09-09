@@ -1,5 +1,7 @@
 # gashapon-demo
 
+- http://gashapon-demo.s3-website-ap-northeast-1.amazonaws.com/
+
 ```
 # ローカルで確認
 npm run dev
