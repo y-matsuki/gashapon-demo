@@ -17,7 +17,9 @@
           :row-class-name="tableRowClassName">
           <el-table-column
             prop="play"
-            label="サンプル視聴">
+            label="視聴"
+            width="80"
+            >
            <template slot-scope="scope">
              <el-button type="primary" @click="open(scope.row.play)">
      <i class="el-icon-service"></i>
