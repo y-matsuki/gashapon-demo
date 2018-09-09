@@ -10,11 +10,11 @@
         style="width: 100%">
         <el-table-column
           type="index"
-          >
+          width="20">
         </el-table-column>
         <el-table-column
           label="特別音源"
-          width="180"
+          width="50"
           prop="play">
           <template slot-scope="scope">
             <el-button type="danger" @click="open(scope.row.play)" v-if="scope.row.play" circle>
@@ -26,7 +26,7 @@
         <el-table-column
           prop="artist"
           label="アーティスト"
-          width="180">
+          >
         </el-table-column>
         <el-table-column
           prop="name"

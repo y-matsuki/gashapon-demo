@@ -7,15 +7,15 @@
       <i class="el-icon-service"></i>
       <el-table
         :data="tableData"
-        style="width: 100%"
-        :row-class-name="tableRowClassName">
+        style="width: 100%">
         <el-table-column
           type="index"
-          :index="indexMethod">
+          width="20">
         </el-table-column>
         <el-table-column
           prop="play"
-          label="再生">
+          label="再生"
+          width="50">
           <template slot-scope="scope">
             <el-button type="primary" @click="open(scope.row.play)" circle>
               <i class="el-icon-caret-right"></i>
@@ -25,7 +25,7 @@
         <el-table-column
           prop="artist"
           label="アーティスト"
-          width="180">
+          >
         </el-table-column>
         <el-table-column
           prop="name"
