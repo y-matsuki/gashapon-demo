@@ -16,18 +16,23 @@
           style="width: 100%"
           :row-class-name="tableRowClassName">
           <el-table-column
-            prop="sample"
+            prop="play"
             label="サンプル視聴">
+           <template slot-scope="scope">
+             <el-button type="primary" @click="open(scope.row.play)">
+     <i class="el-icon-service"></i>
+   </el-button> 
+   </template>
           </el-table-column>
           <el-table-column
             prop="music"
             label="曲名"
-            width="180">
+            >
           </el-table-column>
           <el-table-column
             prop="name"
             label="アーティスト名"
-            width="180">
+            >
           </el-table-column>
 
         </el-table>
@@ -40,38 +45,46 @@
     data() {
       return {
         tableData: [{
-          sample: <audio src="https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/HOTLIMIT.m4a" controls></audio>,
+          play: 'https://s3-ap-northeast-1.amazonaws.com/gashapon-demo/static/HOTLIMIT.m4a',
           music: 'HOT LIMIT',
           name: 'T.M.Revolution'
           
         }, {
-          sample: <audio controls></audio>,
+          play: <audio controls></audio>,
           music: 'TSUNAMI',
           name: 'サザンオールスターズ'
           
         }, {
-          sample: <audio controls></audio>,
+          play: <audio controls></audio>,
           music: '睡蓮花',
           name: '湘南乃風'
           
         }, {
-          sample: <audio controls></audio>,
+          play: <audio controls></audio>,
           music: 'パレオはエメラルド',
           name: 'SKE48'
           
         },{
-          sample: <audio controls></audio>,
+          play: <audio controls></audio>,
           music: '海の声',
           name: '桐谷健太'
           
         },{
-            sample: <audio controls></audio>,
+            play: <audio controls></audio>,
           music: 'シ－ズン・イン・ザ・サン',
           name: 'TUBE'
         
           }]
       }
-    }
+    },
+    methods: {
+  open(name){
+console.log(name)
+const audioElem=new Audio()
+audioElem.src=name
+audioElem.play()
+}
+}
   }
   </script>
 
